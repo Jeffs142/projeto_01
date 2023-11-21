@@ -3,91 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queijaria canastra Medeiros - Sua loja de queijos online</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Poppins&display=swap" rel="stylesheet">
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Queijaria Medeiros</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Lista de tarefas</h1>
+        <input type="text" id="tarefa" required placeholder="Digite sua tarefa...">
+        <button type="submit" id="btn">Adicionar</button>
     </header>
-    <section id="about">
-        <div class="container">
-            <img class="store-front" src="imagens/queijaria_canastra.jpg" alt="Vários queijos" />
-            <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, recusandae! Facilis omnis tempore voluptas modi incidunt excepturi est aliquid? Libero nisi provident quis possimus cum vitae architecto at est eligendi?
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum maiores veniam nisi corporis sapiente commodi eos omnis iste fugit, inventore ducimus voluptates, sequi modi quas, provident itaque consectetur esse porro.
-                </p>
-                <ul class="brands-list">
-                    <li><img src="imagens/logo_01.jpg" alt="cheese"/></li>
-                    <li><img src="imagens/logo_02.png" alt="sônia"/></li>
-                    <li><img src="imagens/logo_03.jpg" alt="verde campo"/></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required/>
-                        <input type="email" placeholder="Seu email" required/>
-                        <input type="tel" placeholder="Seu telefone (opcional)" />
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="imagens/instagram.png" alt="Logo do Instagram" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="imagens/facebook.png" alt="Logo do facebook" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Clodoveu Leite de Faria, Nº 413, Centro - Medeiros - MG
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Games Shop - Todos os direitos reservados - 2023
-            </p>
-        </div>
-    </footer>
+    <ul id="lista">
+        <li><i class="check"><span></i>Lista tarefas<i class="close"></i></span></li>
+    </ul>
 </body>
-</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./main.js"></script>
+</html> 
